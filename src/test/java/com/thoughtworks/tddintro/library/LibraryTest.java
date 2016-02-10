@@ -28,7 +28,7 @@ public class LibraryTest {
     @Test
     public void shouldPrintBookTitleWhenThereIsOneBook() {
 
-        List<String> books = new ArrayList<>();
+        List<String> books = new ArrayList<String>();
         String title = "Book Title";
         books.add(title);
         PrintStream printStream = mock(PrintStream.class);
@@ -66,7 +66,7 @@ public class LibraryTest {
     // This one is done for you
     @Test
     public void shouldWelcomeUser() {
-        List<String> books = new ArrayList<>();
+        List<String> books = new ArrayList<String>();
         PrintStream printStream = mock(PrintStream.class);
         DateTimeFormatter dateTimeFormatter = mock(DateTimeFormatter.class);
         Library library = new Library(books, printStream, dateTimeFormatter);
@@ -82,7 +82,7 @@ public class LibraryTest {
 
     @Test
     public void shouldDisplayFormattedTimeWhenFormattedTimeIsAnEmptyString() {
-        List<String> books = new ArrayList<>();
+        List<String> books = new ArrayList<String>();
         PrintStream printStream = mock(PrintStream.class);
         DateTime time = new DateTime();
         DateTimeFormatter dateTimeFormatter = mock(DateTimeFormatter.class);
