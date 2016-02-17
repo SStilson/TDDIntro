@@ -10,15 +10,17 @@ public class Account {
         this.amount = amount;
     }
 
-    public Integer deposit(int depositAmt) {
+    public void deposit(int depositAmt) {
         this.amount += depositAmt;
-        return this.amount;
     }
 
-    public Integer withdraw(int withdrawAmt) {
+    public void withdraw(int withdrawAmt) {
         if(withdrawAmt <= this.amount) {
             this.amount -= withdrawAmt;
         }
+    }
+
+    public Integer checkBalance() {
         return this.amount;
     }
 }
