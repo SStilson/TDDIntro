@@ -25,11 +25,11 @@ public class LibraryTest {
 
     @Before
     public void setUp() throws Exception {
-        List<String> books = new ArrayList<String>();
-        PrintStream printStream = mock(PrintStream.class);
-        DateTimeFormatter dateTimeFormatter = mock(DateTimeFormatter.class);
-        Library library = new Library(books, printStream, dateTimeFormatter);
-        DateTime time = new DateTime();
+        books = new ArrayList<String>();
+        printStream = mock(PrintStream.class);
+        dateTimeFormatter = mock(DateTimeFormatter.class);
+        library = new Library(books, printStream, dateTimeFormatter);
+        time = new DateTime();
     }
 
     /*
